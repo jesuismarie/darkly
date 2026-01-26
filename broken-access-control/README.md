@@ -13,7 +13,7 @@ http://<target-ip>
 Use `gobuster` to brute-force directories and files:
 
 ```bash
-gobuster dir -u http://192.168.11.54/ \
+gobuster dir -u http://<target-ip>/ \
 -w /usr/share/wordlists/dirb/common.txt \
 --exclude-length 975
 ```
