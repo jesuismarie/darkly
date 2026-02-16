@@ -8,54 +8,64 @@ http://<target-ip>
 
 ---
 
-## Step 2: Identify the File Inclusion Parameter
+## Step 2: Check robots.txt
 
-Observe that the application uses a `page` parameter to load content dynamically:
+Most websites expose a `robots.txt` file.
+
+Navigate to:
 
 ```
-http://<target-ip>/?page=xxxx
+http://<target-ip>/robots.txt
 ```
 
-This indicates a potential file inclusion vulnerability.
+Contents:
+
+```
+User-agent: *
+Disallow: /whatever
+Disallow: /.hidden
+```
+
+This reveals hidden directories that should not be indexed by search engines — but are still accessible.
 
 ---
 
-## Step 3: Test for Directory Traversal
+## Step 3: Explore Hidden Directory
 
-Attempt to traverse directories to access a sensitive system file:
+Navigate to:
 
 ```
-http://<target-ip>/?page=../../../../../../../etc/passwd
+http://<target-ip>/.hidden
 ```
+
+Inside this directory:
+
+* Many nested subdirectories exist
+* At deeper levels, there are `README` files
 
 ---
 
-## Step 4: Analyze the Response
+## Step 4: Search for the Flag
 
-The application returns an alert message.
+Because the directory structure is very large and deeply nested, manual browsing is inefficient.
 
-This confirms:
+Write a script to:
 
-* The input is being processed by the server
-* Directory traversal is possible
-* You are on the right exploitation path
+1. Recursively traverse all subdirectories
+2. Locate all `README` files
+3. Search their contents for the flag
 
----
+Example approach (conceptually):
 
-## Step 5: Adjust the Payload
+* Use `wget` or `curl` recursively
+* Or write a small script to:
 
-Increase the number of `../` sequences to reach the root directory correctly.
-
-For example:
-
-```
-http://<target-ip>/?page=../../../../../../../../../../../../../../../../etc/passwd
-```
+	* Fetch directory listing
+	* Follow links
+	* Check file contents
 
 ---
 
-## Step 6: Get the Flag
+## Step 5: Retrieve the Flag
 
-After reaching the correct path depth, the application loads the targeted file.
-
-The flag is then displayed in the response.
+After scanning all nested directories and reading the `README` files, the flag is found inside one of them.
