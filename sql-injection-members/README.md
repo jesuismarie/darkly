@@ -107,3 +107,10 @@ Follow the instructions from the database:
 ## Step 8: Get the Flag
 
 After applying the transformations (lowercase + SHA-256), the output is accepted as the final flag.
+
+## Fix Recommendations
+
+* Use prepared statements / parameterized queries
+* Sanitize and validate all user inputs
+* Restrict database user privileges
+* Hide detailed SQL errors

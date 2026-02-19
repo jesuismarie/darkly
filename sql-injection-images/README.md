@@ -92,3 +92,10 @@ The extracted value is an MD5 hash:
 ## Step 7: Get the Flag
 
 The resulting SHA-256 value is accepted as the final flag.
+
+## Fix Recommendations
+
+* Use prepared statements / parameterized queries
+* Sanitize and validate all user inputs
+* Restrict database user privileges
+* Hide detailed SQL errors

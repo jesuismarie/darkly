@@ -95,3 +95,9 @@ Password: qwerty123@
 ## Step 7: Get the Flag
 
 After successful login, the flag is displayed on the admin page.
+
+## Fix Recommendations
+
+* Restrict access to sensitive files (.htpasswd, backups, configs)
+* Use strong hashing (bcrypt, argon2)
+* Disable directory listing

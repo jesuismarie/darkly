@@ -59,3 +59,11 @@ http://<target-ip>/?page=../../../../../../../../../../../../../../../../etc/pas
 After reaching the correct path depth, the application loads the targeted file.
 
 The flag is then displayed in the response.
+
+## Fix Recommendations
+
+* Never include files based on raw user input
+* Implement strict allowlists for file names
+* Normalize and validate file paths server-side
+* Disable directory traversal sequences (../)
+* Use fixed routing instead of file-based includes

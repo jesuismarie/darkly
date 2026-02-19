@@ -61,3 +61,11 @@ By adding extra characters before the `<script>` tag, the filter fails to proper
 After submitting the crafted payload, the script executes successfully.
 
 The flag is then displayed.
+
+## Fix Recommendations
+
+* Validate and sanitize all user inputs
+* Encode output properly before rendering
+* Implement a strict Content Security Policy (CSP)
+* Avoid rendering raw user-controlled HTML
+

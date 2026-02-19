@@ -73,3 +73,10 @@ When the page loads:
 * Executes the injected script
 
 The flag is then displayed.
+
+## Fix Recommendations
+
+* Validate and sanitize all user inputs
+* Encode output properly before rendering
+* Implement a strict Content Security Policy (CSP)
+* Avoid rendering raw user-controlled HTML

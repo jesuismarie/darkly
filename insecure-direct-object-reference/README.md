@@ -74,3 +74,9 @@ Now select this modified option from the dropdown.
 When the form auto-submits, the server accepts the tampered value.
 
 The flag is immediately displayed.
+
+## Fix Recommendations
+
+* Validate all input values server-side
+* Enforce allowed ranges (e.g., 1–10)
+* Reject unexpected or tampered parameters

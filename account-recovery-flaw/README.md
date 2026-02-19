@@ -47,3 +47,8 @@ test@test.com
 Submit the password recovery form.
 
 The application accepts the modified hidden field and immediately reveals the flag.
+
+## Fix Recommendations
+
+* Implement secure password recovery flows (email verification tokens)
+* Log and rate-limit recovery attempts

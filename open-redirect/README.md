@@ -59,3 +59,10 @@ Send the modified request.
 The application accepts the arbitrary value for the `site` parameter.
 
 Instead of validating allowed destinations, it processes the request and reveals the flag.
+
+## Fix Recommendations
+
+* Use an allowlist of approved redirect destinations
+* Avoid redirecting based on raw user input
+* Validate and normalize redirect parameters
+* Use indirect identifiers instead of URLs

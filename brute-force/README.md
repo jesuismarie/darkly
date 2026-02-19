@@ -65,3 +65,10 @@ Password: shadow
 ## Step 7: Get the Flag
 
 After successful login, the flag is displayed on the page.
+
+## Fix Recommendations
+
+* Implement rate limiting on login attempts
+* Add account lockout after multiple failures
+* Use strong password policies
+* Monitor and alert on suspicious login activity

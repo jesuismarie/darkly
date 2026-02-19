@@ -64,3 +64,11 @@ Replace the cookie value with the MD5 hash of `true`.
 ## Step 7: Get the Flag
 
 After refreshing with the forged admin cookie, the application grants admin access and displays the flag.
+
+## Fix Recommendations
+
+* Never trust client-side cookies for authorization
+* Store privilege state server-side
+* Use signed cookies (HMAC / JWT with verification)
+* Avoid weak hashes like MD5
+* Implement proper session management

@@ -52,3 +52,10 @@ http://<target-ip>/?page=b7e44c7a40c5f80139f0a50f3650fb2bd8d00b0d24667c4c2ca32c8
 The server accepts the spoofed headers and grants access to the protected page.
 
 The flag is returned in the response.
+
+## Fix Recommendations
+
+* Never rely on Referer or User-Agent for security decisions
+* Implement proper authentication and session validation
+* Validate access server-side using secure tokens
+* Log suspicious header manipulation attempts

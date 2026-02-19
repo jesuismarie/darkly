@@ -69,3 +69,10 @@ Example approach (conceptually):
 ## Step 5: Retrieve the Flag
 
 After scanning all nested directories and reading the `README` files, the flag is found inside one of them.
+
+## Fix Recommendations
+
+* Do not expose sensitive paths in robots.txt
+* Implement proper access control restrictions
+* Disable directory listing
+* Protect hidden resources with authentication

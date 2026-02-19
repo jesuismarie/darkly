@@ -49,3 +49,10 @@ Click **Send** in Repeater.
 The server accepts the file because it only checks the `Content-Type` header instead of validating the actual file content.
 
 The flag is then returned in the response.
+
+## Fix Recommendations
+
+* Validate file type server-side using MIME detection
+* Verify file signatures (magic bytes)
+* Restrict allowed file extensions
+* Store uploaded files outside the web root
