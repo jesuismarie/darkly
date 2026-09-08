@@ -60,16 +60,20 @@ Each directory corresponds to one **security breach** in the application.
 .
 ├── <breach-name>
 │   ├── flag
-│   └── README.md
+│   └── Ressources
+│       └── README.md
 ├── <breach-name>
 │   ├── flag
-│   └── README.md
+│   └── Ressources
+│       └── README.md
 ├── <breach-name>
 │   ├── flag
-│   └── README.md
+│   └── Ressources
+│       └── README.md
 ├── <breach-name>
 │   ├── flag
-│   └── README.md
+│   └── Ressources
+│       └── README.md
 └── ...
 ```
 
