@@ -56,7 +56,7 @@ The password with the **maximum response length** indicates a successful login.
 Use the discovered credentials:
 
 ```
-Username: admin  
+Username: admin
 Password: shadow
 ```
 
