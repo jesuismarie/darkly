@@ -17,16 +17,15 @@ Each directory represents a **specific security breach** that must be identified
 
 ## Setup Instructions
 
-To begin the **Darkly challenge**, download the provided **ISO image** and run the vulnerable platform in a virtual machine.
+To begin the **Darkly challenge**, launch the provided **ISO image** in a virtual machine.
 
 ### Requirements
 
-* A **64-bit host operating system**
 * A **virtualization platform** (VirtualBox, VMware, QEMU, etc.)
-* The **Darkly VM image**
-* Both attacker and target machines must be on the **same network**
+* The **Darkly ISO image** — a **32-bit (i386)** virtual machine, as specified in the project subject
+* Attacker and target machines on the **same network**
 
-Access the web application through your browser:
+Once the VM boots, it displays the target IP address at the login prompt. Access the web application through your browser:
 
 ```
 http://<target-ip>
@@ -34,7 +33,7 @@ http://<target-ip>
 
 ## Objectives
 
-Your goal is to identify and exploit multiple vulnerabilities present in the application.
+The mandatory part of this project requires identifying and exploiting **14 different breaches** present in the application.
 
 For each breach:
 
@@ -81,15 +80,17 @@ Each directory corresponds to one **security breach** in the application.
 
 Each breach directory contains:
 
-* **README.md** — detailed write-up explaining the vulnerability and exploitation process
 * **flag** — the flag obtained after successful exploitation
-* **scripts/tools** (optional) — custom tools used during the attack
+* **Ressources/README.md** — detailed write-up explaining the vulnerability and exploitation process
+* **Ressources/** (optional) — custom scripts or tools used during the attack
+
+No compiled binaries are included in any `Ressources` folder.
 
 ## Completion Criteria
 
 The Darkly project is considered **complete** when:
 
-* All vulnerabilities are successfully discovered
+* All 14 mandatory vulnerabilities are successfully discovered
 * Each breach has a **clear and reproducible write-up**
 * The **flag is obtained for every vulnerability**
 * The exploitation process is **technically explained**
