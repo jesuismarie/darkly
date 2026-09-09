@@ -59,19 +59,19 @@ Each directory corresponds to one **security breach** in the application.
 .
 ├── <breach-name>
 │   ├── flag
-│   └── Ressources
+│   └── Resources
 │       └── README.md
 ├── <breach-name>
 │   ├── flag
-│   └── Ressources
+│   └── Resources
 │       └── README.md
 ├── <breach-name>
 │   ├── flag
-│   └── Ressources
+│   └── Resources
 │       └── README.md
 ├── <breach-name>
 │   ├── flag
-│   └── Ressources
+│   └── Resources
 │       └── README.md
 └── ...
 ```
@@ -81,10 +81,10 @@ Each directory corresponds to one **security breach** in the application.
 Each breach directory contains:
 
 * **flag** — the flag obtained after successful exploitation
-* **Ressources/README.md** — detailed write-up explaining the vulnerability and exploitation process
-* **Ressources/** (optional) — custom scripts or tools used during the attack
+* **Resources/README.md** — detailed write-up explaining the vulnerability and exploitation process
+* **Resources/** (optional) — custom scripts or tools used during the attack
 
-No compiled binaries are included in any `Ressources` folder.
+No compiled binaries are included in any `Resources` folder.
 
 ## Completion Criteria
 
