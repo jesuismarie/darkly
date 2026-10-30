@@ -97,13 +97,6 @@ The Darkly project is considered **complete** when:
 
 The goal is not only to retrieve flags but to **understand the security flaw behind each breach**.
 
-## ISO File
-
-Need the **Darkly ISO**?
-
-Contact via email:
-**[mari.nazaryan7173@gmail.com](mailto:mari.nazaryan7173@gmail.com)**
-
 Happy hacking.
 
 > *Understand the vulnerability — don't just exploit it.* 🐚🔐
